@@ -17,7 +17,7 @@ const App = () => {
         onChange={handerChange}
         className="input"
          />
-         {name !== '' && <h2>Hello, {name}!</h2>}
+         <h2>{name ? `Hello, ${name}!` : ''}</h2>
     </div>
   )
 }
